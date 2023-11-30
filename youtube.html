@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="public/images/utubeicon.ico" rel="shortcut icon">
+    <style>
+        .bi-list {
+            font-size: 30px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-text-box {
+            width: 500px;
+            border:1px solid gray;
+            height: 25px;
+            padding: 5px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .bi-search {
+            padding: 5px;
+            border:1px solid gray;
+            height: 25px;
+            width: 50px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-align: center;
+            background-color: lightgray;
+        }
+        .bi-mic-fill {
+            padding: 10px;
+        }
+        .short-hand-buttons span {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+        .channel-logo {
+            border-radius: 80px;
+            height: 25px;
+            width: 25px;
+            
+        }
+        section {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 11fr;
+            height: 500px;
+            overflow: auto;
+        }
+        nav div {
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+        .channel-description {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 2fr 8fr 2fr;
+        }
+        .channel-title-container {
+            width: 600px;
+            padding: 20px;
+        }
+        .channel-title {
+            font-size: 30px;
+            font-family: Arial;
+        }
+        .channel-subtitle {
+            font-size: 18px;
+            margin-top: 10px;
+            color:gray;
+            font-family: Arial;
+        }
+        .subscribe-button {
+            background-color: black;
+            color:white;
+            font-size: 20px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .channel-navigation {
+            display: flex;
+            justify-content: space-around;
+            font-family: Arial;
+            color: rgba(0, 0, 0, 0.781);
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .channel-highlights {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            column-gap: 30px;
+        }
+        .highlights-video {
+            width: 100%;
+            height: 190px;            
+        }
+        ul {
+            list-style: none;
+            margin-left: -40px;
+        }
+        li {
+            font-family: Arial;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color:gray;
+        }
+        .our-videos {
+            width: 100%;
+            height: 160px;
+        }
+        .row1 {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            column-gap: 10px;
+            margin-bottom: 100px;
+            margin-top: 15px; 
+        } 
+        .row2 {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            column-gap: 10px;
+            margin-bottom:100px;
+            row-gap: 20px;            
+        }   
+        .row3 {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            column-gap: 10px;
+            margin-bottom:100px;
+            row-gap: 20px;          
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="bi bi-list"></span>
+            <img src="./public/images/logo.jpg" width="100">
+        </div>
+        <div class="search-bar">
+            <div class="search-text-box"> Search </div>
+            <div class="bi bi-search"></div>
+            <div class="bi bi-mic-fill"></div>
+        </div>
+        <div class="short-hand-buttons">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell"></span>
+            <img src="./public/images/logo1.jpg" width="50" class="channel-logo">
+        </div>
+    </header>
+    <section>
+        <nav>
+            <div class="bi bi-house-door"></div>
+            <div class="bi bi-camera-reels"></div>
+            <div class="bi bi-lightning-charge"></div>
+            <div class="bi bi-collection-play"></div>
+        </nav>
+        <main>
+            <div>
+                <img src="./public/images/Youtube-channel-banner .jpg" width="100%">
+            </div>
+            <div class="channel-description">
+                <div>
+                    <img src="./public/images/nareshit-logo.jpg">
+                </div>
+                <div class="channel-title-container">
+                    <div class="channel-title">Naresh i Technologies</div>
+                    <div class="channel-subtitle">@NareshIT1.1M subscribers2.8K videos</div>
+                    <p>We are one of the India's largest software training organization and an Top 5 of Best Software Training Institutes...</p>
+                </div>
+                <div>
+                    <div class="subscribe-button">Subscribe</div>
+                </div>
+            </div>
+            <div class="channel-navigation">
+                <div>HOME</div>
+                <div>VIDEOS</div>
+                <div>SHORTS</div>
+                <div>LIVE</div>
+                <div>PLAYLISTS</div>
+                <div>COMMUNITY</div>
+                <div>CHANNELS</div>
+                <div>ABOUT</div>
+            </div>
+            <article class="channel-highlights">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/Zg4-uSjxosE"; class="highlights-video"></iframe>
+                </div>
+                <div>
+                 167,998 views 3 years ago
+                 <p>Best Software Training Institute with Placements - Naresh i Technologies</p>
+                 <ul>
+                    <li>SQL Server @ 6.00 Pm : https://bit.ly/443b2J8&lt;/li&gt;
+                    <li>Attend a Free Demo On Full Stack Data Science </li>
+                    <li>Python @ 11.00 AM :- https://bit.ly/3CzQAnF&lt;/li&gt;
+                    <li>Ui Full Stack Web DevelopMent @ 8.30 AM </li>
+                 </ul>
+                </div>
+            </article>
+            <div class="our-videos">
+                <div class="row1">
+                    <iframe src="https://www.youtube.com/embed/vPauKLk-cn8"; class="our-videos"></iframe>
+                    <iframe src="https://www.youtube.com/embed/_A7yBhW8Fx4"; class="our-videos"></iframe>
+                    <iframe src="https://www.youtube.com/embed/ISjsJ44ZZcU"; class="our-videos"></iframe>
+                    <iframe src="https://www.youtube.com/embed/vjWYt8bFp5E"; class="our-videos"></iframe>
+                </div>
+                <div class="row2">
+                    <iframe src="https://www.youtube.com/embed/70oRSJ4cBPA"; class="our-videos"></iframe>
+                    <iframe src="https://www.youtube.com/embed/In0sSC-OplE"; class="our-videos"></iframe>
+                    <iframe src="https://www.youtube.com/embed/8ffFPCj6SlU"; class="our-videos"></iframe>
+                    <iframe src="https://www.youtube.com/embed/UDhHBEYIdwc"; class="our-videos"></iframe>
+                </div>
+                <div class="row3">
+                    <iframe src="https://www.youtube.com/embed/si-KFFOW2gw"; class="our-videos"></iframe>
+                    <iframe src="https://www.youtube.com/embed/TxWKGhF9KdM"; class="our-videos"></iframe>
+                    <iframe src="https://www.youtube.com/embed/sB7YGSbAIvQ"; class="our-videos"></iframe>
+                    <iframe src="https://www.youtube.com/embed/LiU1aMisd-Q"; class="our-videos"></iframe>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
